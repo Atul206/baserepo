@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- padding -->
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_default">16dp</dimen>
+    <dimen name="padding_large_s">24dp</dimen>
+    <dimen name="padding_large">32dp</dimen>
+
+    <!-- Progress -->
+    <dimen name="progress_small_stroke_width">2dp</dimen>
+
+    <dimen name="padding_horizontal_small">4dp</dimen>
+    <dimen name="padding_horizontal_medium">8dp</dimen>
+    <dimen name="padding_horizontal_default">16dp</dimen>
+    <dimen name="padding_horizontal_large_xs">20dp</dimen>
+    <dimen name="padding_horizontal_large_s">24dp</dimen>
+    <dimen name="padding_horizontal_large">32dp</dimen>
+
+    <!-- text -->
+    <dimen name="text_size_small_s">11sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_regular">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large_s">18sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+
+    <!-- images -->
+    <dimen name="toolbar_icon_size">32dp</dimen>
+    <dimen name="image_transaction_item_size">36dp</dimen>
+    <dimen name="image_icon_size_medium">40dp</dimen>
+    <dimen name="image_icon_size_large">46dp</dimen>
+
+    <!-- button -->
+    <dimen name="btn_default_height">48dp</dimen>
+    <dimen name="btn_default_corner_radius">24dp</dimen>
+
+    <!-- home dimensions -->
+    <dimen name="bank_account_recycler_padding">10dp</dimen>
+    <dimen name="transaction_item_height">80dp</dimen>
+    <dimen name="transaction_title_text_size">16sp</dimen>
+
+    <!-- transaction details -->
+
+    <!-- profile -->
+    <dimen name="app_version_margin_bottom">32dp</dimen>
+    <dimen name="edit_avatar_image_size">36dp</dimen>
+    <dimen name="profile_icon_size">90dp</dimen>
+
+    <!-- notifications -->
+    <dimen name="item_notification_height">74dp</dimen>
+
+    <!-- create budget -->
+
+    <!--ProgressButton-->
+    <dimen name="progress_button_bar_size">20dp</dimen>
+    <dimen name="progress_button_bar_elevation">6dp</dimen>
+</resources>

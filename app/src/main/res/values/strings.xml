@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BaseSetup</string>
+    <!-- error messages start region -->
+    <string name="error_please_try_again">Please try again</string>
+    <string name="error_message_common">Something went wrong</string>
+    <string name="error_message_password_empty">Password can\'t be empty</string>
+    <string name="error_message_password_to_short">Password must not be less than 8 characters</string>
+    <string name="error_message_password_to_long">Password must not be more than 128 characters</string>
+    <string name="error_message_server_temporary_unavailable">Server is temporarily unavailable.</string>
+    <string name="error_message_server_maintenance">Technical works are in progress.</string>
+
+    <!-- network errors messages-->
+    <string name="network_error_connection">No internet connection.</string>
+    <string name="network_error_connection_timeout">Connection Timeout</string>
+    <string name="logout_message">You\'ve been logged out</string>
+</resources>

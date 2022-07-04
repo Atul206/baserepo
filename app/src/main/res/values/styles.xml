@@ -1,0 +1,20 @@
+<resources>
+    <style name="FullScreenDialogStyle" parent="Theme.MaterialComponents.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="DefaultAlertDialogStyle" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/DefaultAlertDialogButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/DefaultAlertDialogButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/DefaultAlertDialogButtonStyle</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="DefaultAlertDialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_regular</item>
+    </style>
+</resources>
