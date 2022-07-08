@@ -43,6 +43,7 @@ abstract class BaseActivity<VIEW_BINDING:ViewBinding> : AppCompatActivity {
         setWindowBackground()
         if (layoutId != UNDEFINED_INT) {
             binding = DataBindingUtil.setContentView(this, layoutId)
+            setContentView(binding.root)
         }
 
         var bundle = bundleOf()

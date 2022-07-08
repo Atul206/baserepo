@@ -4,16 +4,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.roadster.roam.basesetup.navigation.Navigation
 import com.roadster.roam.basesetup.navigation.ViewState
 import com.roadster.roam.basesetup.viewmodel.BaseStateViewModel
 
+
 abstract class BaseViewModelFragment<ViewBinding : ViewDataBinding,VIEW_MODEL : BaseStateViewModel<VIEW_STATE, NAVIGATION>, VIEW_STATE : ViewState, NAVIGATION : Navigation> :
     BaseFragment() {
 
-    private lateinit var binding: ViewBinding
+    protected lateinit var binding: ViewBinding
 
     abstract val viewModel: VIEW_MODEL
 
@@ -28,6 +30,7 @@ abstract class BaseViewModelFragment<ViewBinding : ViewDataBinding,VIEW_MODEL : 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         observeStates()
+        backPressHandling()
     }
 
     abstract fun setViewState(viewState: VIEW_STATE)
@@ -51,5 +54,15 @@ abstract class BaseViewModelFragment<ViewBinding : ViewDataBinding,VIEW_MODEL : 
         binding.lifecycleOwner = viewLifecycleOwner
 
         return binding.root
+    }
+
+    private fun backPressHandling(){
+        val callback: OnBackPressedCallback =
+            object : OnBackPressedCallback(true /* enabled by default */) {
+                override fun handleOnBackPressed() {
+                    // Handle the back button event
+                }
+            }
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
     }
 }
