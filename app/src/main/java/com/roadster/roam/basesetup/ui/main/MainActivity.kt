@@ -1,5 +1,6 @@
-package com.roadster.roam.basesetup
+package com.roadster.roam.basesetup.ui.main
 
+import com.roadster.roam.basesetup.R
 import com.roadster.roam.basesetup.databinding.ActivityMainBinding
 import com.roadster.roam.basesetup.ui.main.base.BaseActivity
 

@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
-import com.pfm.sdk.presentation.utils.AlertDialogClickListener
 import com.roadster.roam.basesetup.R
 import com.roadster.roam.basesetup.extensions.UNDEFINED_INT
 import com.roadster.roam.basesetup.extensions.isUndefined
