@@ -3,6 +3,10 @@
 - Following Steps for integration
 
 <code>
+plugins {
+    id 'kotlin-kapt'
+}
+
 dataBinding {
    enabled = true
 }
