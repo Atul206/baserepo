@@ -29,6 +29,8 @@ abstract class BaseActivity<VIEW_BINDING:ViewBinding> : AppCompatActivity {
 
     abstract val navHostFragmentId: Int
 
+    abstract val destinationFragmentId: Int
+
     val navController: NavController by lazy {
         Navigation.findNavController(this, navHostFragmentId)
     }
@@ -50,7 +52,7 @@ abstract class BaseActivity<VIEW_BINDING:ViewBinding> : AppCompatActivity {
 
         (supportFragmentManager.findFragmentById(navHostFragmentId) as? NavHostFragment)?.apply {
             val navGraph = navController.navInflater.inflate(graphId).apply {
-                setStartDestination(R.id.exampleFragment)
+                setStartDestination(destinationFragmentId)
             }
             navController.setGraph(navGraph, bundle)
         }

@@ -13,6 +13,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         get() = R.id.navigation_host_fragment
     override val layoutId: Int
         get() = R.layout.activity_main
+    override val destinationFragmentId: Int
+        get() = R.id.exampleFragment
 
     override fun showInfoMsg(message: CharSequence?) {
         TODO("Not yet implemented")

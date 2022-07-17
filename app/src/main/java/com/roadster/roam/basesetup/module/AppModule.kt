@@ -1,5 +1,4 @@
 package com.roadster.roam.basesetup.module
-
 import com.roadster.roam.basesetup.ui.main.BlankViewModel
 import com.roadster.roam.basesetup.ui.main.ExampleUseCase
 import com.roadster.roam.basesetup.ui.main.MainViewModel
