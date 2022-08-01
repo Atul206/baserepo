@@ -1,7 +1,12 @@
 package com.roadster.roam.basesetup.extensions.ui
 
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
+import androidx.annotation.LayoutRes
 import androidx.core.view.isVisible
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
 
 fun View.toGone() {
     isVisible = false
@@ -22,3 +27,8 @@ fun View.setOnClickListenerWithDebounce(action: () -> Unit) {
         }
     })
 }
+
+
+
+fun <T : ViewDataBinding> ViewGroup.dataBind(@LayoutRes layoutRes: Int): T =
+    DataBindingUtil.inflate(LayoutInflater.from(context), layoutRes, this, false)

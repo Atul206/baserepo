@@ -1,4 +1,4 @@
-package com.roadster.roam.basesetup.ui.main.base
+package com.roadster.roam.basesetup.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.roadster.roam.basesetup.navigation.Navigation
 import com.roadster.roam.basesetup.navigation.ViewState
+import com.roadster.roam.basesetup.ui.main.base.BaseFragment
 import com.roadster.roam.basesetup.viewmodel.BaseStateViewModel
 
 

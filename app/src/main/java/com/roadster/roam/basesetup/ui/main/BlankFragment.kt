@@ -1,9 +1,9 @@
 package com.roadster.roam.basesetup.ui.main
 
 import com.roadster.roam.basesetup.R
+import com.roadster.roam.basesetup.base.BaseViewModelFragment
 import com.roadster.roam.basesetup.databinding.FragmentBlankBinding
 import com.roadster.roam.basesetup.extensions.ui.setOnClickListenerWithDebounce
-import com.roadster.roam.basesetup.ui.main.base.BaseViewModelFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class BlankFragment : BaseViewModelFragment<FragmentBlankBinding, BlankViewModel, BlankViewState, BlankNavigation>() {
