@@ -21,4 +21,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     }
 
 
+    override fun onTokenExpire(message: CharSequence?) {
+
+    }
+
 }

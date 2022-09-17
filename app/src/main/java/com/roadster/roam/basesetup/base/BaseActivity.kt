@@ -95,14 +95,17 @@ abstract class BaseActivity<VIEW_BINDING:ViewBinding> : AppCompatActivity {
 
     fun handleCommonNetworkErrors(cause: BaseError) {
         when (cause) {
-            is NetworkError.Unauthorized -> {}
+            is NetworkError.Unauthorized -> { unauthorised(cause) }
             is NetworkError.Connection -> handleConnectionError()
             is NetworkError.ConnectionTimeout -> handleConnectionTimeoutError()
-            is NetworkError.ServerInternalError,
-            is NetworkError.ServerTemporaryUnavailable,
+            is NetworkError.ServerInternalError -> showServerErrorDialog(cause)
+            is NetworkError.ServerTemporaryUnavailable -> showServerErrorDialog(cause)
             is NetworkError.ServerMaintenance -> showServerErrorDialog(cause)
         }
     }
+
+
+    private fun unauthorised(error: BaseError) = onTokenExpire(error.message ?: getString(R.string.error_message_common))
 
     private fun showServerErrorDialog(error: BaseError) =
         showInfoMessage(error.message ?: getString(R.string.error_message_common))
@@ -116,4 +119,6 @@ abstract class BaseActivity<VIEW_BINDING:ViewBinding> : AppCompatActivity {
     fun showInfoMessage(message: CharSequence) = showInfoMsg(message)
 
     abstract fun showInfoMsg(message:CharSequence?)
+
+    abstract fun onTokenExpire(message: CharSequence?)
 }
