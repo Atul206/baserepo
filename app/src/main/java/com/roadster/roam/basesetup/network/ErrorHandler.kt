@@ -1,4 +1,4 @@
-package com.neev.owner.network
+package com.roadster.roam.basesetup.network
 
 import com.roadster.roam.basesetup.network.BaseError
 import retrofit2.Response

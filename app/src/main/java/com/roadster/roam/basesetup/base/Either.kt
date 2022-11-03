@@ -1,4 +1,4 @@
-package com.neev.owner.learning
+package com.roadster.roam.basesetup.base
 
 sealed class Either<out L, out R> {
 

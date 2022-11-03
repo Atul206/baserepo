@@ -21,7 +21,7 @@ object BaseDateUtils {
         TRENDS_CHART_MONTH_SEPARATE("dd\nMMM"),
         TRENDS_CHART_MONTH("MMM"),
         TRANSACTION_DETAILS_DATE("EEEE, dd MMMM yyyy"),
-        ACCOUNT_LAST_UPDATED("hh:mm, dd MMMM yyyy"),
+        ACCOUNT_LAST_UPDATED("hh:mm aa, dd MMMM yyyy"),
         TRANSACTION_DETAIL_HEADER_DAY_FORMAT("EEE"),
         TRANSACTION_DETAIL_HEADER_TIME_FORMAT("hh:mm aa"),
         TRANSACTION_FIELD_FORMAT("yyyy-MM-dd"),
